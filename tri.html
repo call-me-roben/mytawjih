@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ترتيب</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/study.png" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--===============================================================================================-->
+  </head>
+  <style>
+    /* Replace this with the link to the Font Awesome CSS file to use the icons below */
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+    .social-icons {
+      margin-top: 341px;
+      position: absolute;
+      margin-left: -540px;
+    }
+
+    .social-icons :hover {
+      animation: fadeInAndSlideUp 0.5s forwards;
+    }
+
+    @keyframes fadeInAndSlideUp {
+      to {
+        transform: translateY(
+          -5px
+        ); /* Move the table to its original position (0) */
+      }
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #333;
+      font-size: 24px;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+
+    .social-icons a:hover {
+      transition: 0.5s;
+      color: #ff8000; /* Change to the color you want when hovering over the icons */
+    }
+  </style>
+  <body>
+    <div class="contact1">
+      <div class="container-contact1">
+        <div class="contact1-pic js-tilt" data-tilt>
+          <img src="images/img-01.png" alt="IMG" />
+        </div>
+
+        <form class="contact1-form validate-form">
+          <span class="contact1-form-title"> نوع الترتيب </span>
+
+          <div class="container-contact1-form-btn">
+            <button class="contact1-form-btn" id="scoreb">
+              <a href="score.php">حسب السكور</a>
+            </button>
+            <p id="or">أو</p>
+            <button class="contact1-form-btn" id="numb">
+              <a href="num.php">حسب عدد المقاعد</a>
+            </button>
+            <p id="or2">أو</p>
+            <a class="contact1-form-btn" id="back2b" href="index.php">عودة</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+            if(disclaimer) {
+                disclaimer.remove();
+            }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>سجل الجامعة</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/study.png" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--===============================================================================================-->
+    <style>
+    /* Replace this with the link to the Font Awesome CSS file to use the icons below */
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+    .social-icons {
+      margin-top: 341px;
+      position: absolute;
+      margin-left: -540px;
+    }
+
+    .social-icons :hover {
+      animation: fadeInAndSlideUp 0.5s forwards;
+    }
+
+    @keyframes fadeInAndSlideUp {
+      to {
+        transform: translateY(
+          -5px
+        ); /* Move the table to its original position (0) */
+      }
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #333;
+      font-size: 24px;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+
+    .social-icons a:hover {
+      transition: 0.5s;
+      color: #ff8000; /* Change to the color you want when hovering over the icons */
+    }
+  </style>
+  </head>
+  
+  <body>
+    <div class="contact1">
+      <div class="container-contact1">
+        <div class="contact1-pic js-tilt" data-tilt>
+          <img src="images/img-01.png" alt="IMG" />
+        </div>
+
+        <form
+          method="POST"
+          class="contact1-form validate-form"
+          action="enrg.php"
+        >
+          <span class="contact1-form-title"> نظم توجيهك الجامعي</span>
+
+          <div
+            class="wrap-input1 validate-input"
+            data-validate="Name is required"
+          >
+            <input
+              class="input1"
+              type="text"
+              name="fac"
+              placeholder="إسم الجامعة"
+            />
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div
+            class="wrap-input1 validate-input"
+            data-validate="Name is required"
+          >
+            <input
+              class="input1"
+              type="text"
+              name="list"
+              list="gouvernorat-list"
+              placeholder="الولاية"
+            />
+            <datalist id="gouvernorat-list">
+              <option value="Ariana"></option>
+              <option value="Beja"></option>
+              <option value="Ben Arous"></option>
+              <option value="Bizerte"></option>
+              <option value="Gabes"></option>
+              <option value="Gafsa"></option>
+              <option value="Jendouba"></option>
+              <option value="Kairouan"></option>
+              <option value="Kasserine"></option>
+              <option value="Kebili"></option>
+              <option value="Le Kef"></option>
+              <option value="Mahdia"></option>
+              <option value="La Manouba"></option>
+              <option value="Medenine"></option>
+              <option value="Monastir"></option>
+              <option value="Nabeul"></option>
+              <option value="Sfax"></option>
+              <option value="Sidi Bouzid"></option>
+              <option value="Siliana"></option>
+              <option value="Sousse"></option>
+              <option value="Tataouine"></option>
+              <option value="Tozeur"></option>
+              <option value="Tunis"></option>
+              <option value="Zaghouan"></option>
+            </datalist>
+
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div
+            class="wrap-input1 validate-input"
+            data-validate="Valid email is required: ex@abc.xyz"
+          >
+            <input
+              class="input1"
+              type="text"
+              name="code"
+              placeholder="كود الإختصاص"
+            />
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div
+            class="wrap-input1 validate-input"
+            data-validate="Valid email is required: ex@abc.xyz"
+          >
+            <input
+              class="input1"
+              type="text"
+              name="spec"
+              placeholder="الإختصاص"
+            />
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div
+            class="wrap-input1 validate-input"
+            data-validate="Subject is required"
+          >
+            <input
+              class="input1"
+              type="text"
+              name="place"
+              placeholder="عدد المقاعد"
+            />
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div
+            class="wrap-input1 validate-input"
+            data-validate="Subject is required"
+          >
+            <input
+              class="input1"
+              type="text"
+              name="score22"
+              placeholder="آخر سكور تم قبوله سنة 2022"
+            />
+            <span class="shadow-input1"></span>
+          </div>
+          <div
+            class="wrap-input1 validate-input"
+            data-validate="Subject is required"
+          >
+            <input
+              class="input1"
+              type="text"
+              name="score21"
+              placeholder="آخر سكور تم قبوله سنة 2021"
+            />
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div class="container-contact1-form-btn">
+            <button class="contact1-form-btn">
+              <a href="index.php">عودة </a>
+            </button>
+            <p id="or">أو</p>
+            <input
+              type="submit"
+              class="contact1-form-btn"
+              value="حفظ الجامعة"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+            if(disclaimer) {
+                disclaimer.remove();
+            }
+        });
+    </script>
+  </body>
+</html>
